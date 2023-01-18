@@ -2,7 +2,8 @@ function updateCounter() {
     const counter = document.getElementById('counter');
     //increment the counter everytime user visits the page by storing in local storage
     let count = 1;
-    // count = localStorage.getItem('visiterCount');
+    count = localStorage.getItem('visiterCount');
+    count++;
     /**
      * if count is null then set count to 1
     * else increment the count by 1 (Note: count is a string so convert it to number using parseInt)
